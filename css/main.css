@@ -218,12 +218,12 @@ nav {
     margin-top: 72px;
 }
 
-.projects-container {
+.heading-container {
     width: 1028px;
     height: 518px;
 }
 
-.projects-heading-wrapper {
+.heading-wrapper {
     margin-bottom: 45px;
     display: flex;
     justify-content: space-between;
