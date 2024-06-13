@@ -305,6 +305,68 @@ nav {
   SKILLS SECTION
 ----------------- */
 
+.container.skills {
+    height: auto;
+    margin: auto;
+}
+
+.heading-wrapper.skills {
+    margin-bottom: 30px;
+}
+
+.h-line.skills {
+    width: 230px;
+}
+
+.skill-items-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-img {
+    width: 350px;
+}
+
+.skill-lng {
+    width: 584px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-content: start;
+    align-items: start;
+    gap: 18px;
+}
+
+.skill-articles {
+    width: 175px;
+    border: 1px solid var(--gray);
+}
+
+.skill-articles.width {
+    width: 194px;
+}
+
+.frame {
+    margin-top: -24px;
+}
+
+.skill-title {
+    padding: 10px;
+    color: var(--white);
+    border-bottom: 1px solid var(--gray);
+}
+
+.skill-desc {
+    padding: 10px;
+    color: var(--gray);
+}
+
+
+/* -----------------
+  ABOUT ME SECTION
+------------------ */
+
+
 
 
 
