@@ -420,6 +420,10 @@ nav {
     margin-top: 105px;
 }
 
+.h-line.cont {
+    width: 128px;
+}
+
 .contacts-desc-wrapper {
     display: flex;
     justify-content: space-between;
