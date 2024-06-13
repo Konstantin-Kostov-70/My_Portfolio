@@ -440,7 +440,7 @@ nav {
 }
 
 .msg-img {
-    display: inline-block;
+    display: inline-flex;
 }
 
 .msg-img-wrapper a {
