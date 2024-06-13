@@ -219,6 +219,7 @@ nav {
 }
 
 .container {
+    margin: auto;
     width: 1028px;
     height: 518px;
 }
@@ -307,7 +308,6 @@ nav {
 
 .container.skills {
     height: auto;
-    margin: auto;
 }
 
 .heading-wrapper.skills {
@@ -366,7 +366,53 @@ nav {
   ABOUT ME SECTION
 ------------------ */
 
+.about-me {
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.container.about {
+    height: auto;
+}
+
+.about-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h-line.about {
+    width: 325px;
+}
+
+.about-desc-wrapper {
+    width: 516px;
+}
+
+.about-img-wrapper {
+    margin-top: -75px;
+}
+
+.about-desc {
+    color: var(--gray);
+}
+
+.about-desc p {
+    margin-bottom: 30px;
+}
+
+.right-dots-img {
+    margin-top: 315px;
+}
+
+.left-empty-react {
+    width: 78px;
+    height: 152px;
+    margin-top: 165px;
+    border-top: 1px solid var(--gray);
+    border-right: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+}
 
 
 
