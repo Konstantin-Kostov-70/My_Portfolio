@@ -439,15 +439,15 @@ nav {
     border: 1px solid var(--gray);
 }
 
-.msg-img-wrapper {
-    display: flex;
-    gap: 5px;
-    align-items: center;
+.msg-img {
+    display: inline-block;
 }
 
-.msg-img-wrapper,
-.msg-title {
-    display: inline-flex;
+.msg-img-wrapper a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--gray);
 }
 
 .msg-title {
