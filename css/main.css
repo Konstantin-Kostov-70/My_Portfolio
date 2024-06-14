@@ -29,6 +29,25 @@ body {
 /* -------
   HEADER
 ---------*/
+header {
+    position: relative;
+}
+
+.vertical-icons {
+    position: absolute;
+    left: 18px;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.v-line {
+    width: 1px;
+    height: 192px;
+    margin-bottom: 10px;
+    background-color: var(--gray);
+}
 
 nav {
     font-size: medium;
