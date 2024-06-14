@@ -1,0 +1,13 @@
+@media screen and (min-width: 1368px){
+
+    
+    nav,
+    .container,
+    .hero {
+        width: 70%;
+    }
+    .hero {
+        justify-content: space-between;
+    }
+    
+} 
