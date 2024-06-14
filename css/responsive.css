@@ -10,4 +10,189 @@
         justify-content: space-between;
     }
     
+    
 } 
+
+@media (min-width: 768px ) and (max-width: 1200px){
+
+    .vertical-icons {
+        display: none;
+    }
+   
+    nav,
+    .hero {
+        width: 90%;
+    }
+    .hero {
+        justify-content: space-between;
+    }
+    .hero-desc-wrapper {
+        width: 50%;
+    }
+    .hero-up-desc {
+        font-size: 1.3rem;
+    }
+    .hero-down-desc {
+        font-size: 1rem;
+    }
+    .hero-container {
+        width: 45%;
+    }
+    .hero-img-desc {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .quotes {
+        gap: 10vw;
+    }
+    .quotes-text {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+    .quotes-img-wrapper-up,
+    .quotes-img-wrapper-down {
+        width: 30px;
+    }
+    .quotes-img {
+        width: 20px;
+        height: 14px;
+        margin-left: 5px;
+    }
+    .quotes-img-wrapper-up {
+        top: -8px;
+    }
+    
+    .quotes-img-wrapper-down {
+        top: 62px;
+    }
+    .quotes-author {
+        font-size: 1.2rem;
+    }
+    .empty-cube {
+        width: 56px;
+        height: 65px;
+    }
+
+    .container {
+        width: 85%;
+    }
+    .heading {
+        font-size: 1.3rem;
+    }
+    .h-line {
+        width: 270px;
+    }
+    .right-empty-react {
+        width: 42px;
+        height: 100px;
+    }
+    .cards {
+        width: 32%;
+        font-size: 0.8rem;
+    }
+    .pr-title {
+        font-size: 1rem;
+        margin-bottom: 4px;
+        line-height: 25px;
+    }
+    .pr-img-desc p {
+        line-height: 26px;
+    }
+    .pr-title-wrapper {
+        padding: 10px;
+    }
+    .skill-img-wrapper {
+        width: 40%;
+    }
+    .skill-lng {
+        width: 60%;
+        gap: 10px;
+    }
+    .skill-articles,
+    .skill-articles.width {
+        width: 31%;
+    }
+    .skill-title,
+    .about-desc,
+    .contacts-desc,
+    .msg-title {
+        font-size: 0.9rem;
+    }
+    .skill-desc {
+        font-size: 0.75rem;
+    } 
+    .left-empty-react {
+        width: 42px;
+        height: 104px;
+    }
+
+    .right-dots-img {
+       width: 42px;
+    }
+    .about-desc-wrapper {
+        width: 60%;
+    }
+    .about-img-wrapper {
+        width: 257px;
+    }
+    .about-desc p {
+        margin-bottom: 18px;
+    }
+
+    .contacts-img-wrapper {
+        width: 42px;
+    }
+    .contacts-empty-react {
+        width: 42px;
+        height: 62px;
+    }
+    .contacts-desc {
+        width: 60%;
+    }
+    .message {
+        padding: 10px;
+        gap: 7px;
+    }
+    .msg-img,
+    .footer-icons {
+        width: 21px;
+        height: 21px;
+    }
+    .msg-icon-text,
+    .footer-bottom,
+    .footer-desc,
+    .logo-name{
+       font-size: 0.8rem;
+    }
+    .logo-name {
+        margin-right: 10px;
+    }
+    .media-title h3{
+        font-size: 1.3rem;
+    }
+  
+}
+
+@media screen and (max-width: 767px) {
+  
+    .normal-layout {
+        display: none;
+    }
+    .burger-layout {
+        display: block;
+        padding: 0 20px;
+    }
+    .hero {
+      flex-direction: column;
+      width: 100%;
+    }
+   
+    nav,
+    header,
+    .hero-desc-wrapper,
+    .hero-img-desc
+     {
+        width: 100%;
+    }
+}

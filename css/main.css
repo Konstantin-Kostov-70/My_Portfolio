@@ -14,8 +14,12 @@ body {
     font-family: "Fira Code", "Fira Mono", "Roboto Mono";
 }
 
+.burger-layout {
+    display: none;
+}
+
 .container {
-    width: 1024px;
+    width:  1024px;
 }
 
 .white-text {
@@ -101,20 +105,20 @@ nav {
     gap: 20px;
 }
 
-.hero-desc {
+.hero-desc-wrapper {
     width: 537px;
 }
 
-.up-desc {
-    font-size: 30px;
+.hero-up-desc {
+    font-size: 1.875rem;
     font-weight: 600;
     margin-bottom: 40px;
 }
 
-.down-desc {
+.hero-down-desc {
     color: var(--gray);
     margin-bottom: 24px;
-    width: 463px;
+    /* width: 463px; */
 }
 
 .btn {
@@ -169,7 +173,7 @@ nav {
 .quotes {
     display: flex;
     justify-content: end;
-    gap: 246px;
+    gap: 18vw;
     color: var(--white);
 }
 
@@ -234,6 +238,7 @@ nav {
     margin-top: 72px;
     margin-bottom: 112px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -275,7 +280,7 @@ nav {
     justify-content: space-between;
 }
 
-.card {
+.cards {
     width: 331px;
     border: 1px solid var(--gray);
 }
@@ -298,7 +303,7 @@ nav {
     margin-bottom: 18px;
     color: var(--white);
     font-size: 24px;
-    line-height: 30px;
+    line-height: 32px;
 }
 
 .pr-desc {
@@ -339,8 +344,12 @@ nav {
     justify-content: space-between;
 }
 
-.skill-img {
+.skill-img-wrapper {
     width: 350px;
+}
+
+.group-up-img {
+    margin-bottom: 60px;
 }
 
 .skill-lng {
