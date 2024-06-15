@@ -187,6 +187,13 @@
       flex-direction: column;
       width: 100%;
     }
+    .hero-container {
+        margin-bottom: 50px;
+    }
+
+    .hero-img-desc {
+        justify-content: center;
+    }
    
     nav,
     header,
@@ -195,4 +202,8 @@
      {
         width: 100%;
     }
+    footer {
+        margin-top: 100px;
+    }
+
 }

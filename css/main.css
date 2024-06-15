@@ -546,6 +546,49 @@ footer {
     color: var(--gray);
 }
 
+/* ----------------
+  BURGER-MENU
+------------------- */
+
+.burger-menu-wrapper {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.x-icon {
+    display: none;
+}
+
+.x-icon,
+.burger-icon {
+    cursor: pointer;
+}
+
+.menu-links {
+    width: 230px;
+}
+
+.menu-links li {
+    margin-bottom: 52px;
+}
+
+.burger-menu-item {
+    color: var(--gray);
+    font-size: 2.5rem;
+}
+.burger-layout-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.burger-layout-icons img {
+    width: 64px;
+    height: 64px;
+}
+
 
 
   
