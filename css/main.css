@@ -10,6 +10,7 @@
 }
 
 body {
+    position: relative;
     background-color: var(--background);
     font-family: "Fira Code", "Fira Mono", "Roboto Mono";
 }
@@ -278,16 +279,26 @@ nav {
     align-items: start;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+}
+
+.projects-cards.all-pr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .cards {
-    width: 331px;
+    width: 330px;
     border: 1px solid var(--gray);
+}
+.cards.all-pr-cards {
+    margin-bottom: 12px;
 }
 
 .pr-img-desc {
     padding: 6px;
     color: var(--gray);
+    border-top: 1px solid var(--gray);
     border-bottom: 1px solid var(--gray);
 }
 
@@ -523,18 +534,30 @@ footer {
 }
 
 .footer-desc {
-    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--white);
+    
 }
 
-.ft-desc-up{
-    margin-bottom: 15px;
+.mail {
+    color: var(--gray);
+    display: inline-flex;
 }
 
 .media-title h3 {
+    text-align: right;
     margin-bottom: 15px;
     font-size: 24px;
     font-weight: 500;
     color: var(--white);
+}
+
+.media-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
 }
 
 .media-icons img {
@@ -551,7 +574,9 @@ footer {
 ------------------- */
 
 .burger-menu-wrapper {
-    margin-top: 150px;
+    width: 230px;
+    padding: 10px;
+    border: 1px solid var(--gray);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -566,17 +591,21 @@ footer {
     cursor: pointer;
 }
 
-.menu-links {
-    width: 230px;
+.menu-links li {
+   margin: 20px 0;
 }
 
-.menu-links li {
-    margin-bottom: 52px;
+.burger-menu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    display: none;
+    background-color: var(--background);
 }
 
 .burger-menu-item {
     color: var(--gray);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 .burger-layout-icons {
     display: flex;

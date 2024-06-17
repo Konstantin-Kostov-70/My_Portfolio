@@ -1,0 +1,111 @@
+.page-heading {
+    width: 1024px;
+    margin: auto;
+    margin-top: 56px;
+    color: var(--gray);
+}
+
+.view-all-cards {
+    display: none;
+}
+
+.projects-cards li:nth-child(4),
+.projects-cards li:nth-child(7)
+ {
+    margin-top: -34px;
+}
+
+.shapes
+ {
+    position: relative;
+    width: 70px;
+}
+
+.react-right {
+    height: 120px;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    border-left: 1px solid var(--gray);
+}
+.react-left {
+    height: 120px;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    border-right: 1px solid var(--gray);
+}
+
+.hidden-shapes {
+    position: absolute;
+    width: 50px;
+    display: none;
+}
+
+.dots-1 {
+    margin-top: 240px;
+}
+.react-3 {
+    margin-top: 640px;
+}
+
+.dots-5 {
+    margin-top: 80px;
+}
+
+.react-7 {
+    margin-top: 300px;
+}
+
+.dots-1 {
+    margin-top: 120px;
+}
+.react-3 {
+    margin-top: 340px;
+}
+
+.react-1 {
+    left: 0;
+    top: 460px;
+}
+.react-2 {
+    left: 0;
+    bottom: 400px;
+}
+.react-4 {
+    right: 0;
+    top: 1170px;
+}
+.dots-2 {
+    left: 0;
+    top: 960px;
+}
+.dots-3 {
+    right: 0;
+    top: 720px;
+}
+.dots-4 {
+    right: 0;
+    bottom: 240px;
+}
+
+.react-6 {
+    left: 0;
+    top: 520px;
+}
+.dots-8 {
+    right: 0;
+    top: 740px;
+}
+
+.dots-6 {
+    left: 0;
+    top: 960px;
+}
+.react-8 {
+    right: 0;
+    top: 1180px;
+}
+.react-5 {
+    left: 0;
+    top: 1400px;
+}
+
