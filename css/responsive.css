@@ -45,13 +45,13 @@
         justify-content: space-between;
     }
     .hero-desc-wrapper {
-        width: 50%;
+        width: 49%;
     }
     .hero-up-desc {
         font-size: 1.3rem;
     }
     .hero-container {
-        width: 45%;
+        width: 46%;
     }
     .hero-img-desc {
         width: 100%;
@@ -195,6 +195,13 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .hero-img-desc {
+        font-size: 0.8rem;
+    }
+}
+
+
 @media screen and (max-width: 700px) {
 
     .normal-layout,
@@ -217,6 +224,7 @@
         margin-bottom: 50px;
     }
     .hero-img-desc {
+        font-size: 0.9rem;
         justify-content: center;
     }
     nav,
