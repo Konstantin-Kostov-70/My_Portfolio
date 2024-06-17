@@ -26,12 +26,13 @@ function responsiveLayout() {
             btn.textContent = "hide ~~>";
             cards.forEach(card => card.style.display = "block");
             shapes.forEach(shape => shape.style.display = "block");
-            btn.setAttribute("data-clicked", "true");
+            btn.setAttribute("btn-clicked", "true");
+            
         } else if (btn.textContent === "hide ~~>") {
             btn.textContent = "view all ~~>";
             cards.forEach(card => card.style.display = "none");
             shapes.forEach(shape => shape.style.display = "none");
-            btn.setAttribute("data-clicked", "false");
+            btn.setAttribute("btn-clicked", "false");
         }
     }
 
@@ -49,7 +50,7 @@ function responsiveLayout() {
             secondButton.addEventListener("click", secondButtonHandler);
 
             // Restore previous state if buttons were clicked
-            if (firsButton.getAttribute("data-clicked") === "true") {
+            if (firsButton.getAttribute("btn-clicked") === "true") {
                 hiddenCards.forEach(card => card.style.display = "block");
                 hiddenShapesUp.forEach(shape => shape.style.display = "block");
                 firsButton.textContent = "hide ~~>";
@@ -57,7 +58,7 @@ function responsiveLayout() {
                 hiddenCards.forEach(card => card.style.display = "none");
                 hiddenShapesUp.forEach(shape => shape.style.display = "none");
             }
-            if (secondButton.getAttribute("data-clicked") === "true") {
+            if (secondButton.getAttribute("btn-clicked") === "true") {
                 hiddenCardsSmall.forEach(card => card.style.display = "block");
                 hiddenShapesDown.forEach(shape => shape.style.display = "block");
                 secondButton.textContent = "hide ~~>";
