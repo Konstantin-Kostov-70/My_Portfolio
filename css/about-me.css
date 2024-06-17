@@ -16,12 +16,31 @@
 }
 
 .skill-icons-wrapper {
+    position: relative;
     width: 100%;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     border: 1px solid var(--gray);
+}
+
+.skill-icons-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.tech-icons {
+    width: 35px;
+    height: auto;
+    z-index: 1;
 }
 
 .skill-lng {
@@ -33,7 +52,58 @@
     margin: 0;
 }
 
-.tech-icons {
-    width: 35px;
+.education,
+.skills.about,
+.skills.fun-facts {
+    margin-top: 130px;
+}
+
+.h-line.edu {
+    width: 370px;
+}
+
+.edu-items-wrapper {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.diploma-wrapper {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.diploma {
+    padding: 10px;
+    width: 45%;
     height: auto;
+    border: 1px solid var(--gray);
+}
+
+.btn-edu,
+.btn-edu:active {
+    color: var(--white);
+}
+.facts {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-content: start;
+    gap: 10px;
+    color: var(--gray);
+}
+
+.facts p {
+    padding: 7px;
+    border: 1px solid var(--gray);
+}
+
+.cat {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
 }
