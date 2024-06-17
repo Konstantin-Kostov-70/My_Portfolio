@@ -1,0 +1,39 @@
+.about-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.right-dots-img {
+    width: 70px;
+    margin-top: 512px;
+}
+
+.skill-items-wrapper {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skill-icons-wrapper {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 1px solid var(--gray);
+}
+
+.skill-lng {
+    width: 100%;
+    justify-content: start;
+}
+
+.skill-lng li:nth-child(4) {
+    margin: 0;
+}
+
+.tech-icons {
+    width: 35px;
+    height: auto;
+}

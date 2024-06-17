@@ -561,6 +561,7 @@ footer {
 }
 
 .media-icons img {
+    width: 32px;
    display: inline-block;
 }
 
