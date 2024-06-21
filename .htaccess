@@ -9,7 +9,11 @@ RewriteRule ^about-me$ /about-me.html [L,R=301]
 # Ensure / redirects to /index.html
 RewriteRule ^$ /index.html [L]
 
-# Rewrite rule to remove .html extension from URLs
+# Redirect URLs ending with .html to their extensionless counterparts
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Rewrite rule to serve .html files for extensionless URLs
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html [L]
+RewriteRule ^([^.]+)$ $1.html [L]
