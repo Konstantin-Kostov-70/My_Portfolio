@@ -308,19 +308,19 @@
     }
     .hero.hero-burger {
         flex-direction: column;
-        width: 80%;
+        width: 100%;
     }
     .hero-container {
         width: 100%;
         margin-bottom: 50px;
     }
     .hero-img-desc {
+        width: 85%;
         font-size: 0.9rem;
         justify-content: center;
     }
     nav,
-    .hero-desc-wrapper,
-    .hero-img-desc {
+    .hero-desc-wrapper {
         width: 100%;
     }
     footer {
@@ -507,6 +507,10 @@
 
 
 @media screen and (max-width: 450px) {
+    .hero-img-desc {
+        width: 95%;
+        font-size: 0.8rem;
+    }
     .heading {
         font-size: 1.1rem;
     }
