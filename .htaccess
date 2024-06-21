@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Redirect /home to index.html
+RewriteRule ^home$ /index.html [L,R=301]
+
+# Ensure / redirects to /index.html
+RewriteRule ^$ /index.html [L]
