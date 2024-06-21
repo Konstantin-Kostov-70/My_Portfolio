@@ -1,8 +1,33 @@
+.heading.about {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
 .about-img-wrapper {
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: space-around;
+}
+.img-wrapper-hidden {
+    display: none;
+}
+.right-hidden-react {
+    width: 100%;
+    height: 120px;
+    display: none;
+    border-left: 1px solid var(--gray);
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+}
+
+.right-hidden-react.n-1 {
+    margin-top: 220px;
+}
+
+.right-hidden-react.n-2 {
+    margin-top: 280px;
+    height: 80px;
 }
 
 .right-dots-img {
@@ -32,7 +57,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
     z-index: 2;
     pointer-events: none;
 }
@@ -52,14 +77,12 @@
     margin: 0;
 }
 
-.education,
-.skills.about,
-.skills.fun-facts {
+section.about {
     margin-top: 130px;
 }
 
 .h-line.edu {
-    width: 370px;
+    width: 360px;
 }
 
 .edu-items-wrapper {
@@ -81,11 +104,29 @@
     border: 1px solid var(--gray);
 }
 
+.edu-shapes {
+    position: relative;
+    display: none;
+}
+
 .btn-edu,
 .btn-edu:active {
     color: var(--white);
 }
-.facts {
+
+.fact-shapes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fact-shapes-img-down {
+    width: 80px;
+    margin-left: 60px;
+    height: auto;
+}
+
+.fun-facts-desc {
     width: 75%;
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +136,7 @@
     color: var(--gray);
 }
 
-.facts p {
+.fun-facts-desc p {
     padding: 7px;
     border: 1px solid var(--gray);
 }

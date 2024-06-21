@@ -14,18 +14,16 @@
 
 <body>
     <div class="burger-layout">
-        <header class="burger-header">
-            <nav>
-                <a href="/index.html" class="logo-wrapper">
-                    <img class="logo" src="/images/logo.png" alt="logo">
-                    <span class="logo-title">Konstantin</span>
-                </a>
-                <div class="burger-menu-icons">
-                    <img class="burger-icon" src="/images/burger.png" alt="burger">
-                    <img class="x-icon" src="/images/x-icon.png" alt="x-icon">
-                </div>
-            </nav>
-        </header>
+        <nav>
+            <a href="/index.html" class="logo-wrapper">
+                <img class="logo" src="/images/logo.png" alt="logo">
+                <span class="logo-title">Konstantin</span>
+            </a>
+            <div class="burger-menu-icons">
+                <img class="burger-icon" src="/images/burger.png" alt="burger">
+                <img class="x-icon" src="/images/x-icon.png" alt="x-icon">
+            </div>
+        </nav>
         <section class="burger-menu">
             <div class="burger-menu-wrapper">
                 <ul class="menu-links">
@@ -44,81 +42,83 @@
             </div>
         </section>
     </div>
-    <div class="normal-layout">
-        <header>
-            <div class="vertical-icons">
-                <div class="v-line"></div>
-                <a href="#"><img src="/images/Github.svg" alt="github"></a>
-                <a href="#"><img src="/images/Linkedin.svg" alt="email"></a>
-                <a href="#"><img src="/images/Discord.svg" alt="discord"></a>
-            </div>
-            <nav>
-                <a href="/index.html" class="logo-wrapper">
-                    <img class="logo" src="/images/logo.png" alt="logo">
-                    <span class="logo-title">Konstantin</span>
-                </a>
-                <ul class="menu-items">
-                    <li class="items"><a href="/index.html">#home</a></li>
-                    <li class="items"><a href="/all-projects.html">#projects</a></li>
-                    <li class="items"><a href="/about-me.html">#about-me</a></li>
-                    <li class="items"><a href="#">#contacts</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+    <header class="normal-layout">
+        <div class="vertical-icons">
+            <div class="v-line"></div>
+            <a href="#"><img src="/images/Github.svg" alt="github"></a>
+            <a href="#"><img src="/images/Linkedin.svg" alt="email"></a>
+            <a href="#"><img src="/images/Discord.svg" alt="discord"></a>
+        </div>
+        <nav>
+            <a href="/index.html" class="logo-wrapper">
+                <img class="logo" src="/images/logo.png" alt="logo">
+                <span class="logo-title">Konstantin</span>
+            </a>
+            <ul class="menu-items">
+                <li class="items"><a href="/index.html">#home</a></li>
+                <li class="items"><a href="/all-projects.html">#projects</a></li>
+                <li class="items"><a href="/about-me.html">#about-me</a></li>
+                <li class="items"><a href="#">#contacts</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <div class="page-heading">
             <h1><span class="purple-text">/</span><span class="white-text">about-me</span></h1>
             <p>Who am I?</p>
         </div>
-        <section class="about-me">
-            <div class="left-empty-react">
+        <section class="about-me about">
+            <div class="left-empty-react about">
             </div>
             <div class="container">
-                <div class="heading-wrapper">
-                    <div class="heading">
-                        <span class="purple-text">#</span><span class="white-text">in-resume</span>
-                        <hr class="h-line about">
-                        </hr>
-                    </div>
+                <div class="heading about">
+                    <span class="purple-text">#</span><span class="white-text">in-resume</span>
+                    <hr class="h-line about">
+                    </hr>
                 </div>
-                <div class="about-items">
+                <div class="about-items about">
+                    <div class="img-wrapper-hidden">
+                        <img class="about-me-img-dots" src="/images/Dots.png" alt="dots-img">
+                        <img class="about-me-img" src="/images/about-image.png" alt="about-image">
+                    </div>
                     <div class="about-desc-wrapper">
                         <div class="about-desc">
                             <p>Hello, i'm Konstantin!</p>
                             <p>I'm a front-end and back-end developer based in Oslo,
                                 Norway. I can develop responsive websites from
                                 scratch and raise them into modern user-friendly web experiences.</p>
-                            <p>Transforming my creativity and knowledge into a websites has been my passion for over
+                            <p class="about-desc-hidden">Transforming my creativity and knowledge into a websites has
+                                been my passion for over
                                 a two year.
                                 I have been helping various clients to establish their presence online.
                                 I always strive to learn about the newest technologies and frameworks.</p>
-                            <p> I am deeply passionate about cybersecurity, which is my second major interest.
-                                With a strong belief in our collective ability to enhance online safety, I am dedicated
+                            <p class="about-desc-hidden"> I am deeply passionate about cybersecurity, which is my second
+                                major interest.
+                                With a strong belief in our collective ability to enhance online safety, I would like to help
                                 to making the internet a more secure place for everyone.Through continuous learning,
                                 I aspire to join the team that will protect digital spaces
                                 and ensure that users can navigate the online world with confidence and peace of mind
                             </p>
                         </div>
                     </div>
-                    <div class="about-img-wrapper">
-                        <img src="/images/Dots.png" alt="dots-img">
+                    <div class="about-img-wrapper about">
+                        <img class="about-me-img-dots" src="/images/Dots.png" alt="dots-img">
                         <img class="about-me-img" src="/images/about-image.png" alt="about-image">
                     </div>
                 </div>
             </div>
-            <div class="right-site-dots">
+            <div class="right-site-dots about">
                 <img class="right-dots-img" src="/images/left-right-dots.png" alt="right-dots">
+                <div class="right-hidden-react n-1"></div>
+                <div class="right-hidden-react n-2"></div>
             </div>
         </section>
-        <section class="skills about">
-            <div class="container skills">
-                <div class="heading-wrapper skills">
-                    <div class="heading">
-                        <span class="purple-text">#</span><span class="white-text">skills</span>
-                        <hr class="h-line skills">
-                        </hr>
-                    </div>
+        <section class="skill about">
+            <div class="container">
+                <div class="heading about">
+                    <span class="purple-text">#</span><span class="white-text">skills</span>
+                    <hr class="h-line skills">
+                    </hr>
                 </div>
                 <div class="skill-items-wrapper">
                     <div class="skill-icons-wrapper">
@@ -145,8 +145,8 @@
                         <img class="tech-icons" src="/images/tech-icons/Node.js.svg" alt="node-js-icon">
                         <img class="tech-icons" src="/images/tech-icons/GitHub Actions.svg" alt="github-actions-icon">
                     </div>
-                    <ul class="skill-lng">
-                        <li class="skill-articles">
+                    <ul class="skill-lng about">
+                        <li class="skill-articles about">
                             <div class="skill-title">
                                 <p>Languages</p>
                             </div>
@@ -154,7 +154,7 @@
                                 <p>Python PHP Java Script</p>
                             </div>
                         </li>
-                        <li class="skill-articles">
+                        <li class="skill-articles about">
                             <div class="skill-title">
                                 <p>Databases</p>
                             </div>
@@ -162,7 +162,7 @@
                                 <p>SQLite PostgreSQL MySQL Mongo</p>
                             </div>
                         </li>
-                        <li class="skill-articles width">
+                        <li class="skill-articles width about">
                             <div class="skill-title">
                                 <p>Tools</p>
                             </div>
@@ -170,7 +170,7 @@
                                 <p>VScode Linux Figma Git Font Awesome Cyber security tools</p>
                             </div>
                         </li>
-                        <li class="skill-articles frame">
+                        <li class="skill-articles about frame">
                             <div class="skill-title">
                                 <p>Frameworks</p>
                             </div>
@@ -178,7 +178,7 @@
                                 <p>Django React Express CMS/Wordpress</p>
                             </div>
                         </li>
-                        <li class="skill-articles width">
+                        <li class="skill-articles about width">
                             <div class="skill-title">
                                 <p>Other</p>
                             </div>
@@ -190,14 +190,12 @@
                 </div>
             </div>
         </section>
-        <section class="skills education">
-            <div class="container skills">
-                <div class="heading-wrapper skills">
-                    <div class="heading">
-                        <span class="purple-text">#</span><span class="white-text">hall-of-fame</span>
-                        <hr class="h-line skills edu">
-                        </hr>
-                    </div>
+        <section class="education about">
+            <div class="container">
+                <div class="heading about">
+                    <span class="purple-text">#</span><span class="white-text">hall-of-fame</span>
+                    <hr class="h-line edu">
+                    </hr>
                 </div>
                 <div class="edu-items-wrapper">
                     <div class="diploma-wrapper">
@@ -211,40 +209,57 @@
                             <button class="btn"><a href="/images/python-web.jpeg" class="btn-edu">read<span class="arrow"> ~~&gt;</span></a></button>
                         </div>
                     </div>
-                    <div class="skill-img-wrapper">
-                        <img class="group-up-img" src="/images/group-up.png" alt="figure">
-                        <img class="group-down-img" src="/images/group-down.png" alt="figure">
+                    <div class="skill-img-wrapper edu">
+                        <img class="group-up-img edu" src="/images/group-up.png" alt="figure">
+                        <img class="group-down-img edu" src="/images/group-down.png" alt="figure">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="skills fun-facts">
-            <div class="container skills">
-                <div class="heading-wrapper skills">
-                    <div class="heading">
-                        <span class="purple-text">#</span><span class="white-text">my-fun-facts</span>
-                        <hr class="h-line skills ">
-                        </hr>
-                    </div>
+        <section class="edu-shapes">
+            <div class="skill-img-wrapper-edu-left-up">
+                <img class="group-left-img edu" src="/images/group-left-up.png" alt="figure">
+            </div>
+            <div class="skill-img-wrapper-edu-left-down">
+                <img class="group-left-img edu" src="/images/group-left-down.png" alt="figure">
+            </div>
+            <div class="skill-img-wrapper-edu-right-up">
+                <img class="group-right-img edu" src="/images/group-right-up.png" alt="figure">
+            </div>
+            <div class="skill-img-wrapper-edu-right-down">
+                <img class="group-right-img edu" src="/images/group-right-down.png" alt="figure">
+            </div>
+        </section>
+        <section class="fun-facts about">
+            <div class="container">
+                <div class="heading about">
+                    <span class="purple-text">#</span><span class="white-text">my-fun-facts</span>
+                    <hr class="h-line skills fact ">
+                    </hr>
                 </div>
-                <div class="edu-items-wrapper">
+                <div class="edu-items-wrapper facts">
                     <div class="fact-shapes">
-                        <img src="/images/facts.png" alt="shapes">
+                        <div class="fact-shapes-img-up">
+                            <img src="/images/facts-up.png" alt="figure">
+                        </div>
+                        <div class="fact-shapes-img-down">
+                            <img src="/images/facts-down.png" alt="figure">
+                        </div>
                     </div>
-                    <div class="facts">
+                    <div class="fun-facts-desc">
                         <p>I like summer more than winter</p>
                         <p>Often fishing with my friends</p>
                         <p>I like <span class="white-text">pizza </span>and<span class="white-text"> pasta</span></p>
-                        <p>I was in <span class="white-text">Palma de Mallorca</span>, 
-                            <span class="white-text">Ibiza</span> and <span class="white-text">Turkey</span></p>
+                        <p>I was in <span class="white-text">Palma</span>,
+                            <span class="white-text">Ibiza</span> and <span class="white-text">Turkey</span>
+                        </p>
                         <p>My favorite movie is <span class="white-text">Star Wars</span></p>
                         <p>I have a cat <img class="cat" src="/images/sphynx-cat.png" alt="cat"></p>
                         <p>My hometown is <span class="white-text">Varna / Bulgaria</span></p>
                     </div>
-                   
                 </div>
             </div>
-        </section>-
+        </section>
     </main>
     <footer>
         <div class="container ft">

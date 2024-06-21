@@ -21,6 +21,7 @@ body {
 
 .container {
     width:  1024px;
+    margin: auto;
 }
 
 .white-text {
@@ -338,9 +339,6 @@ nav {
 /* ----------------
   SKILLS SECTION
 ----------------- */
-.container.skills {
-    margin: auto;
-}
 
 .heading-wrapper.skills {
     margin-bottom: 30px;
@@ -510,10 +508,6 @@ footer {
     margin-top: 145px;
     padding: 30px 0;
     border-top: 1px solid var(--gray);
-}
-
-.container.ft {
-    margin: auto;
 }
 
 .footer-items {
