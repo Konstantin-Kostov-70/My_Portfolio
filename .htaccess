@@ -4,7 +4,7 @@ RewriteEngine On
 RewriteRule ^home$ /index.html [L,R=301]
 
 # Redirect /about-me to about-me.html
-RewriteRule ^about-me$ /about-me.html [L,R=301]
+# RewriteRule ^about-me$ /about-me.html [L,R=301]
 
 # Ensure / redirects to /index.html
 RewriteRule ^$ /index.html [L]
