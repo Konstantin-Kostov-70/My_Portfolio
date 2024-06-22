@@ -6,7 +6,8 @@ function hideDisplayCards() {
     const hiddenShapesUp = document.querySelectorAll(".shapes-up");
     const hiddenShapesDown = document.querySelectorAll(".shapes-down");
 
-    function toggleCards(btn, cards, shapes) {
+    function toggleCards(btn, cards, shapes, event) {
+        event.preventDefault();
         if (btn.textContent === "view all ~~>") {
             btn.textContent = "hide ~~>";
             cards.forEach(card => card.style.display = "block");
@@ -21,12 +22,12 @@ function hideDisplayCards() {
         }
     }
 
-    function firsButtonHandler() {
-        toggleCards(firsButton, hiddenCards, hiddenShapesUp);
+    function firsButtonHandler(event) {
+        toggleCards(firsButton, hiddenCards, hiddenShapesUp, event);
     }
 
-    function secondButtonHandler() {
-        toggleCards(secondButton, hiddenCardsSmall, hiddenShapesDown);
+    function secondButtonHandler(event) {
+        toggleCards(secondButton, hiddenCardsSmall, hiddenShapesDown, event);
     }
 
     function checkScreenWidth() {
