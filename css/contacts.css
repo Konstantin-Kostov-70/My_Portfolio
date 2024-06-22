@@ -1,0 +1,75 @@
+.support-articles {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.support-desc {
+    width: 42%;
+    color: var(--gray);
+}
+
+.support-items {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.support {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid var(--gray);
+}
+
+.support p:first-child {
+    color: var(--white);
+}
+.support p:last-child {
+    color: var(--gray);
+}
+
+.bit-icon {
+    position: relative;
+    top: 7px;
+    left: -8px;
+    display: inline-block;
+}
+
+.h-line.ask {
+    width: 240px;
+}
+
+form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input,
+textarea {
+    padding: 10px 20px;
+    background-color: var(--background);
+    border: none;
+    border: 1px solid var(--gray);
+}
+
+textarea {
+    height: 250px;
+}
+
+.btn.ask {
+    width: 80px;
+}
+
+.ask-me {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.ask-img-down {
+    margin-top: 30px;
+}
