@@ -15,6 +15,13 @@ body {
     font-family: "Fira Code", "Fira Mono", "Roboto Mono";
 }
 
+.page-heading {
+    width: 1024px;
+    margin: auto;
+    margin-top: 56px;
+    color: var(--gray);
+}
+
 .burger-layout {
     display: none;
 }

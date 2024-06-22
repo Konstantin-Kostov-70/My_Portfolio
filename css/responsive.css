@@ -6,7 +6,6 @@
     .page-heading {
         width: 75%;
     }
-
     .hero {
         justify-content: space-between;
     }
@@ -16,41 +15,35 @@
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
     }
-
     .cards.all-pr-cards {
         margin-bottom: 3vw;
     }
-
     .shape {
         width: 7%;
     }
-
     .dots-3-4 {
         margin-bottom: 10px;
     }
 }
+/* -------------------------------------------- */
 
 @media screen and (max-width: 1200px) {
 
     .vertical-icons {
         display: none;
     }
-
     nav,
     .hero,
     .page-heading {
         width: 85%;
     }
-
     .page-heading,
     .hero-down-des {
         font-size: 1rem;
     }
-
     .hero {
         justify-content: space-between;
     }
-
     .hero-desc-wrapper {
         width: 49%;
     }
@@ -58,154 +51,121 @@
     .hero-up-desc {
         font-size: 1.3rem;
     }
-
     .hero-container {
         width: 46%;
     }
-
     .hero-img-desc {
         width: 100%;
         font-size: 0.9rem;
     }
-
     .quotes {
         gap: 10vw;
     }
-
     .quotes-text {
         padding: 20px;
         font-size: 1.2rem;
     }
-
     .quotes-img-wrapper-up,
     .quotes-img-wrapper-down {
         width: 30px;
     }
-
     .quotes-img {
         width: 20px;
         height: 14px;
         margin-left: 5px;
     }
-
     .quotes-img-wrapper-up {
         top: -8px;
     }
-
     .quotes-img-wrapper-down {
         top: 62px;
     }
-
     .quotes-author {
         font-size: 1.2rem;
     }
-
     .empty-cube {
         width: 56px;
         height: 65px;
     }
-
     .container {
         width: 85%;
     }
-
     .heading {
         font-size: 1.3rem;
     }
-
     .h-line {
         width: 270px;
     }
-
     .right-empty-react {
         width: 42px;
         height: 100px;
     }
-
     .cards {
         width: 31%;
         font-size: 0.8rem;
     }
-
     .projects-cards.all-pr {
         display: flex;
         justify-content: start;
         gap: 10px;
     }
-
     .pr-title {
         font-size: 1rem;
         margin-bottom: 4px;
         line-height: 25px;
     }
-
     .pr-img-desc p {
         line-height: 26px;
     }
-
     .pr-title-wrapper {
         padding: 10px;
     }
-
     .skill-img-wrapper {
         width: 40%;
     }
-
     .skill-lng {
         width: 60%;
         gap: 10px;
     }
-
     .skill-articles,
     .skill-articles.width {
         width: 31%;
     }
-
     .skill-title,
     .about-desc,
     .contacts-desc,
     .msg-title {
         font-size: 0.9rem;
     }
-
     .skill-desc {
         font-size: 0.75rem;
     }
-
     .left-empty-react {
         width: 42px;
         height: 104px;
     }
-
     .right-dots-img {
         width: 42px;
     }
-
     .about-desc-wrapper {
         width: 60%;
     }
-
     .about-img-wrapper {
         width: 257px;
     }
-
     .about-desc p {
         margin-bottom: 18px;
     }
-
     .contacts-img-wrapper {
         width: 42px;
     }
-
     .contacts-empty-react {
         width: 42px;
         height: 62px;
     }
-
     .contacts-desc {
         width: 60%;
     }
-
     .message {
         padding: 10px;
         gap: 7px;
@@ -230,12 +190,9 @@
     .skill-img-wrapper.edu {
         width: 30%;
     }
-
-    /* --------------------------------- */
     .shapes {
         width: 50px;
     }
-
     .react-3 {
         margin-top: 500px;
     }
@@ -248,15 +205,12 @@
     .tech-icons {
         width: 25px;
     }
-
     .skill-lng.about {
         width: 100%;
     }
-
     .skill-articles.about {
         width: 18.5%;
     }
-
     .about-img-wrapper.about {
         width: 38%;
         justify-content: start;
@@ -283,7 +237,6 @@
     .about-img-wrapper.about {
         margin: 0;
     }
-
     .fun-facts {
         font-size: 0.8rem;
     }
@@ -438,33 +391,28 @@
     .skill-img-wrapper.edu {
         display: none;
     }
-  
     .diploma-wrapper {
         width: 75%;
     }
     .edu-shapes {
         display: block;
     }
-
     .skill-img-wrapper-edu-left-up,
     .skill-img-wrapper-edu-right-up, 
     .skill-img-wrapper-edu-left-down, 
     .skill-img-wrapper-edu-right-down {
         position: absolute;
     }
-
     .skill-img-wrapper-edu-left-up {
         width: 14%;
         left: 20px;
        bottom: 220px;
     }
-
     .skill-img-wrapper-edu-left-down {
         width: 18%;
         left: -10px;
         bottom: 0;
     }
-
     .skill-img-wrapper-edu-right-up {
         width: 17%;
         right: 0;
@@ -507,7 +455,7 @@
         width: 60%;
     }
 }
-
+/* ------------------------------------------ */
 
 @media screen and (max-width: 450px) {
     .hero-img-desc {
