@@ -213,7 +213,7 @@
     .msg-img,
     .footer-icons {
         width: 25px;
-        height: 25px;
+        height: auto;
     }
     .msg-icon-text,
     .footer-bottom,
@@ -503,6 +503,9 @@
     .h-line.skills.fact {
        width: 48%;
     }
+    .footer-desc {
+        width: 60%;
+    }
 }
 
 
@@ -523,9 +526,6 @@
     .container.ft {
         width: 85%;
     }
-    .footer-desc {
-        width: 77%;
-    }
     .msg-icon-text,
     .footer-bottom,
     .footer-desc,
@@ -533,7 +533,7 @@
         font-size: 0.8rem;
     }
     .footer-media {
-        width: 22%;
+        width: 30%;
     }
     .media-title h3 {
         font-size: 1.1rem;
