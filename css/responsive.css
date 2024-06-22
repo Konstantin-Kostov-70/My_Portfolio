@@ -224,6 +224,38 @@
     .group-up-img.edu {
         margin-bottom: 85px;
     }
+    /* -------Contacts-------- */
+    .support-articles {
+        font-size: 0.9rem;
+    }
+    .support-items {
+        width: 45%;
+        flex-direction: column;
+        align-items: end;
+    }
+    .support-desc {
+        width: 50%;
+    }
+    .support-desc-img-hidden {
+        display: block;
+        width: 80%;
+    }
+    form {
+        width: 48%;
+    }
+    textarea {
+        height: 20vh;
+    }
+    .ask-me-img-wrapper {
+        width: 40%;
+    }
+    .bit-icon {
+        width: 25px;
+        height: auto;
+    }
+    footer {
+        margin-top: 80px;
+    }
 
 }
 /* ------------------------------------ */
@@ -423,6 +455,35 @@
         right: 10px;
         bottom: 0;
     }
+    /* ------Contacts----------- */
+
+    .support-desc-img-hidden {
+        display: none;
+    }
+    .support-articles {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .support-desc {
+        width: 80%;
+    }
+    .support-items {
+        width: 100%;
+        flex-direction: row;
+        justify-content: start;
+    }
+    .bit-icon {
+        width: 22px;
+    }
+    .card-icon {
+        width: 18px;
+    }
+    .ask-me-img-wrapper {
+        display: none;
+    }
+    form {
+        width: 424px;
+    }
 }
 
 /* --------------------------------------------- */
@@ -453,6 +514,18 @@
     }
     .footer-desc {
         width: 60%;
+    }
+    .support-desc,
+    .support.message,
+    .support-items {
+        width: 100%;
+    }
+    .support-desc {
+        margin-bottom: 20px;
+    }
+    .support-items {
+        flex-direction: column;
+        align-items: start;
     }
 }
 /* ------------------------------------------ */
@@ -529,5 +602,8 @@
     }
     footer {
         margin-top: 80px;
+    }
+    .h-line.ask {
+        width: 180px;
     }
 }

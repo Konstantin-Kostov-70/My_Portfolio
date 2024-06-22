@@ -5,37 +5,56 @@
 }
 
 .support-desc {
-    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
     color: var(--gray);
+}
+
+.support-desc-img-hidden {
+    display: none;
 }
 
 .support-items {
     width: 48%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
+    gap: 10px;
 }
 
 .support {
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    color: var(--gray);
     border: 1px solid var(--gray);
 }
 
 .support p:first-child {
     color: var(--white);
 }
-.support p:last-child {
-    color: var(--gray);
+
+.heading.ask {
+    margin-top: 40px;
+}
+
+.card-icon,
+.bit-icon {
+    display: inline-block;
+}
+
+.card-icon {
+    margin-right: 10px;
 }
 
 .bit-icon {
+    width: 28px;
     position: relative;
-    top: 7px;
-    left: -8px;
-    display: inline-block;
+    top: 5px;
+    left: -6px;
 }
 
 .h-line.ask {
@@ -51,10 +70,20 @@ form {
 
 input,
 textarea {
-    padding: 10px 20px;
+    padding: 7px 10px;
     background-color: var(--background);
     border: none;
     border: 1px solid var(--gray);
+}
+
+.name-email {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.name-email input:first-child, 
+.name-email input:last-child {
+    width: 48%;
 }
 
 textarea {
@@ -69,7 +98,8 @@ textarea {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .ask-img-down {
-    margin-top: 30px;
+    margin-top: 50px;
 }
