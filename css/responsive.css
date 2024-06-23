@@ -1,5 +1,8 @@
 @media screen and (min-width: 1367px) {
 
+    .vertical-icons {
+        left: 38px;
+    }
     nav,
     .container,
     .hero,
@@ -17,8 +20,15 @@
     .cards.all-pr-cards {
         margin-bottom: 3vw;
     }
-    .shape {
+    .btn.all-pro {
+        margin: 0 0 15px 15px;
+    }
+    .shapes {
         width: 7%;
+    }
+    .react-3.react-right,
+    .react-7.react-right {
+        height: 240px;
     }
     .dots-3-4 {
         margin-bottom: 10px;
@@ -133,7 +143,11 @@
     .projects-cards.all-pr {
         display: flex;
         justify-content: start;
+        align-items: stretch;
         gap: 10px;
+    }
+    .cards.all-pr-cards {
+        margin-bottom: 0;
     }
     .pr-title {
         font-size: 1rem;
@@ -334,6 +348,8 @@
     footer {
         margin-top: 100px;
     }
+    /* ------Projects------- */
+
     .page-heading {
         width: 80%;
         margin: auto;
@@ -345,6 +361,9 @@
     }
     .container {
         width: 80%;
+    }
+    .heading-wrapper {
+        justify-content: space-evenly;
     }
     .projects {
         margin-top: 38px;
@@ -364,10 +383,6 @@
     }
     .shapes {
         width: 8%;
-    }
-    .projects-cards li:nth-child(4),
-    .projects-cards li:nth-child(7) {
-        margin-top: 0;
     }
     .view-all-cards {
         display: block;

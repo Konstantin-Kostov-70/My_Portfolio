@@ -1,11 +1,28 @@
-.view-all-cards {
-    display: none;
+.projects-cards.all-pr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    justify-items: start;
 }
 
-.projects-cards li:nth-child(4),
-.projects-cards li:nth-child(7)
- {
-    margin-top: -34px;
+.cards.all-pr-cards {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.cards-items {
+    width: 100%;
+}
+
+.btn.all-pro {
+    margin: 0 0 10px 10px;
+}
+
+.view-all-cards {
+    display: none;
 }
 
 .shapes
