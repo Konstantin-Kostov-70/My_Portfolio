@@ -15,5 +15,12 @@ function responsiveLayout() {
         burgerIcon.style.display = "inline-block";
     });
 }
+document.querySelectorAll(".menu-link").forEach((link) => {
+    if (link.href === window.location.href) {
+        link.classList.add("active");
+        link.setAttribute("aria-current", "page");
+    }
+});
 
 responsiveLayout();
+

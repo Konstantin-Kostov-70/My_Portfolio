@@ -99,6 +99,12 @@ nav {
 .items a {
     color: var(--gray);
 }
+.menu-link.active {
+    color: var(--white);
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 7px;
+}
+
 
 /* ----------------
   HERO SECTION
