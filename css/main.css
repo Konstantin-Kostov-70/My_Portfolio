@@ -144,6 +144,10 @@ nav {
     cursor: pointer;
 }
 
+.btn a {
+    color: var(--white);
+}
+
 .hero-container {
     display: flex;
     flex-direction: column;
