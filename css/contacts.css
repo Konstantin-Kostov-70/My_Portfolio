@@ -99,6 +99,9 @@ textarea {
     display: flex;
     justify-content: space-between;
 }
+.ask-me-img-wrapper {
+    width: 38%;
+}
 .ask-img-down {
     margin-top: 50px;
 }

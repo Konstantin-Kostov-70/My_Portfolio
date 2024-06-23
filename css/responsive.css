@@ -41,6 +41,15 @@
     .about-desc-wrapper {
         width: 50%;
     }
+    form {
+        width: 40%;
+    }
+    textarea {
+        height: 300px;
+    }
+    .ask-me-img-wrapper {
+        width: 30%;
+    }
 }
 /* -------------------------------------------- */
 
@@ -262,9 +271,6 @@
     }
     textarea {
         height: 180px;
-    }
-    .ask-me-img-wrapper {
-        width: 40%;
     }
     .bit-icon {
         width: 25px;
