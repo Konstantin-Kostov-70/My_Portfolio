@@ -14,6 +14,16 @@ function responsiveLayout() {
         xIcon.style.display = "none";
         burgerIcon.style.display = "inline-block";
     });
+
+    const menuLinks = document.querySelectorAll(".menu-link");
+
+    menuLinks.forEach(link => {
+        link.addEventListener("click", (ev) => {
+            ev.preventDefault();
+            console.log(ev.target.href);
+        })
+    });
+
 }
 
 responsiveLayout();
