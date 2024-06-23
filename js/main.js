@@ -16,7 +16,7 @@ function responsiveLayout() {
     });
 }
 document.querySelectorAll(".menu-link").forEach((link) => {
-    if (link.href === window.location.href) {
+    if (link.href !== window.location.href) {
         link.classList.add("active");
         link.setAttribute("aria-current", "page");
     }
