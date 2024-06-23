@@ -19,8 +19,9 @@ function responsiveLayout() {
 
     menuLinks.forEach(link => {
         link.addEventListener("click", (ev) => {
-            ev.preventDefault();
-            console.log(ev.target.href);
+            // ev.preventDefault();
+            console.log("button url -",ev.target.href);
+            console.log("page url -",window.location.href);
         })
     });
 
