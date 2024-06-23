@@ -1,4 +1,4 @@
-@media screen and (min-width: 1368px) {
+@media screen and (min-width: 1367px) {
 
     nav,
     .container,
@@ -9,7 +9,6 @@
     .hero {
         justify-content: space-between;
     }
-
     .projects-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -23,6 +22,24 @@
     }
     .dots-3-4 {
         margin-bottom: 10px;
+    }
+    .support-items {
+        justify-content: end;
+    }
+    .skill-lng.about {
+        justify-content: space-between;
+    }
+    .skill-articles.about {
+        width: 18%;
+    }
+    .tech-icons {
+        width: 45px;
+    }
+    .skill-img-wrapper.edu {
+        width: 35%;
+    }
+    .about-desc-wrapper {
+        width: 50%;
     }
 }
 /* -------------------------------------------- */
