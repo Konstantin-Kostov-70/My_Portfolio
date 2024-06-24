@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/contacts.css">
     <link rel="stylesheet" href="/css/responsive.css">
+    <script type="text/javascript" src="/js/mail.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "FuPJ3GomLO2B_8ONQ",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -81,15 +90,19 @@
                     <div class="support-items">
                         <div class="support message">
                             <p>Support me here</p>
-                            <p><img class="card-icon" src="/images/svg-icons/credit-card.svg" alt="card">440098735611256</p>
-                            <p><img class="bit-icon" src="/images/svg-icons/Bitcoin.svg" alt="bitcoin">3E8ociqZa9mZUSw</p>
+                            <p><img class="card-icon" src="/images/svg-icons/credit-card.svg" alt="card">440098735611256
+                            </p>
+                            <p><img class="bit-icon" src="/images/svg-icons/Bitcoin.svg" alt="bitcoin">3E8ociqZa9mZUSw
+                            </p>
                         </div>
                         <div class="support message">
                             <p class="msg-title">Message me here</p>
-                            <div class="msg-img-wrapper"><a href="#"><img class="msg-img" src="/images/svg-icons/Discord.svg"
-                                        alt="discord"><span class="msg-icon-text">#kosta_offsec</span></div></a>
-                            <div class="msg-img-wrapper"><a href="#"><img class="msg-img" src="/images/svg-icons/Email.svg"
-                                        alt="gmail"><span class="msg-icon-text">kosta.norge@gmail.com</span></div></a>
+                            <div class="msg-img-wrapper"><a href="#"><img class="msg-img"
+                                        src="/images/svg-icons/Discord.svg" alt="discord"><span
+                                        class="msg-icon-text">#kosta_offsec</span></div></a>
+                            <div class="msg-img-wrapper"><a href="#"><img class="msg-img"
+                                        src="/images/svg-icons/Email.svg" alt="gmail"><span
+                                        class="msg-icon-text">kosta.norge@gmail.com</span></div></a>
                         </div>
                     </div>
                 </div>
@@ -99,14 +112,14 @@
                     </hr>
                 </div>
                 <div class="ask-me">
-                    <form action="">
+                    <form id="contact-form" class="form" onsubmit="SendMail(event)">
                         <div class="name-email">
-                            <input name="name" type="text" placeholder="Name">
-                            <input name="email" type="text" placeholder="Email">
+                            <input id="fullName" name="name" type="text" placeholder="Name" required>
+                            <input id="email_id" name="email" type="text" placeholder="Email" required>
                         </div>
-                        <input name="title" type="text" placeholder="Title">
-                        <textarea name="message" id="message" placeholder="Message"></textarea>
-                        <button class="btn ask" type="submit">Send</button>
+                        <input id="title" name="title" type="text" placeholder="Title" required>
+                        <textarea id="message" name="message" id="message" placeholder="Message" required></textarea>
+                        <button class="btn ask">Send</button>
                     </form>
                     <div class="ask-me-img-wrapper">
                         <img class="ask-img-up" src="/images/group-up-Copy.png" alt="shapes">

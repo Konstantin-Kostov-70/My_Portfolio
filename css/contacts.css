@@ -61,7 +61,7 @@
     width: 240px;
 }
 
-form {
+.form {
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -70,10 +70,16 @@ form {
 
 input,
 textarea {
+    color: var(--gray);
     padding: 7px 10px;
     background-color: var(--background);
     border: none;
     border: 1px solid var(--gray);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary); 
 }
 
 .name-email {
@@ -91,7 +97,7 @@ textarea {
 }
 
 .btn.ask {
-    width: 80px;
+    width: 120px;
 }
 
 .ask-me {
