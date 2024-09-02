@@ -17,9 +17,16 @@
     width: 100%;
 }
 
-.btn.all-pro {
-    margin: 0 0 10px 10px;
+.btn-container {
+    padding: 0 10px 10px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
+
+/* .btn.all-pro {
+    margin: 0 0 10px 10px;
+} */
 
 .view-all-cards {
     display: none;

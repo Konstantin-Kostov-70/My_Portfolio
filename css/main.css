@@ -300,6 +300,13 @@ nav {
     
 }
 
+.btn-container {
+    padding: 0 10px 10px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .cards {
     width: 330px;
     border: 1px solid var(--gray);
