@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const type = urlParams.get('type');
 
     const diplomImages = [
-       "/images/certificates-images/diploma.jpeg"
+       "/images/certificates-images/diploma-python.jpeg"
     ];
 
     const certificateImages = [
