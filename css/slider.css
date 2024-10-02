@@ -69,6 +69,14 @@
     background-color: var(--background);
 }
 
+.prev.hidden {
+    display: none;
+}
+
+.next.hidden {
+    display: none;
+}
+
 .image-container {
     width: 100%;
     max-width: 700px;

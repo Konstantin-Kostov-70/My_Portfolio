@@ -34,6 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let imageSources = [];
     if (type === 'diplom') {
         imageSources = diplomImages;
+        prevBtn.classList.add("hidden")
+        nextBtn.classList.add("hidden")
+        
     } else if (type === 'certificates') {
         imageSources = certificateImages;
     }
