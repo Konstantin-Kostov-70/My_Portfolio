@@ -111,3 +111,20 @@ textarea {
 .ask-img-down {
     margin-top: 50px;
 }
+
+.form-message {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    display: none; /* Hidden by default */
+}
+
+.form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}

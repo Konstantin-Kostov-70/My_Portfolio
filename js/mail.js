@@ -6,16 +6,25 @@ function SendMail(event) {
     const emailId = document.getElementById("email_id").value
     const title = document.getElementById("title").value
     const message = document.getElementById("message").value
+    const formMessage = document.getElementById("form-message");
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
+    formMessage.style.display = "none";
+    formMessage.textContent = "";
+    formMessage.classList.remove("success", "error");
+
     if (!fromName || !emailId || !title || !message) {
-        alert("Please fill in all fields.");
+        formMessage.textContent = "Please fill in all fields.";
+        formMessage.classList.add("error");
+        formMessage.style.display = "block";
         return
     }
 
     if (!emailRegex.test(emailId)) {
-        alert("Please enter a valid email address.");
+        formMessage.textContent = "Please enter a valid email address.";
+        formMessage.classList.add("error");
+        formMessage.style.display = "block";
         return;
     }
 
@@ -34,12 +43,16 @@ function SendMail(event) {
             (res) => {
                 if (res.status === 200) {
                     console.log("SENT SUCCESS!");
-                    alert("Message sent successfully!");
+                    formMessage.textContent = "Message sent successfully!";
+                    formMessage.classList.add("success");
+                    formMessage.style.display = "block";
                     contactForm.reset();
                 }
                 else {
                     console.log("SENT N0 SUCCESS!");
-                    alert("Failed to send message. Please try again.")
+                    formMessage.textContent = "Failed to send message. Please try again.";
+                    formMessage.classList.add("error");
+                    formMessage.style.display = "block";
                 }
 
                 submitButton.disabled = false;
@@ -47,7 +60,9 @@ function SendMail(event) {
 
             }, (error) => {
                 console.log("FAILED...", error);
-                alert("Failed to send message. Please try again.");
+                formMessage.textContent = "Failed to send message. Please try again.";
+                formMessage.classList.add("error");
+                formMessage.style.display = "block";
                 submitButton.disabled = false;
                 submitButton.textContent = "Send";
             })
