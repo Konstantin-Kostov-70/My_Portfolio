@@ -1,11 +1,11 @@
 function SendMail(event) {
     event.preventDefault();
-    const contactForm = document.getElementById("contact-form")
+    const contactForm = document.getElementById("contact-form");
     const submitButton = document.querySelector('.btn.ask');
-    const fromName = document.getElementById("fullName").value
-    const emailId = document.getElementById("email_id").value
-    const title = document.getElementById("title").value
-    const message = document.getElementById("message").value
+    const fromName = document.getElementById("fullName").value;
+    const emailId = document.getElementById("email_id").value;
+    const title = document.getElementById("title").value;
+    const message = document.getElementById("message").value;
     const formMessage = document.getElementById("form-message");
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -14,17 +14,23 @@ function SendMail(event) {
     formMessage.textContent = "";
     formMessage.classList.remove("success", "error");
 
-    if (!fromName || !emailId || !title || !message) {
-        formMessage.textContent = "Please fill in all fields.";
-        formMessage.classList.add("error");
+    function showMessage(content, type) {
+        formMessage.textContent = content;
+        formMessage.classList.add(type);
         formMessage.style.display = "block";
-        return
+        
+        setTimeout(() => {
+            formMessage.style.display = "none";
+        }, 3000);
+    }
+
+    if (!fromName || !emailId || !title || !message) {
+        showMessage("Please fill in all fields.", "error");
+        return;
     }
 
     if (!emailRegex.test(emailId)) {
-        formMessage.textContent = "Please enter a valid email address.";
-        formMessage.classList.add("error");
-        formMessage.style.display = "block";
+        showMessage("Please enter a valid email address.", "error");
         return;
     }
 
@@ -33,7 +39,7 @@ function SendMail(event) {
         email_id: emailId,
         title: title,
         message: message,
-    }
+    };
 
     submitButton.disabled = true;
     submitButton.textContent = "Sending...";
@@ -43,27 +49,19 @@ function SendMail(event) {
             (res) => {
                 if (res.status === 200) {
                     console.log("SENT SUCCESS!");
-                    formMessage.textContent = "Message sent successfully!";
-                    formMessage.classList.add("success");
-                    formMessage.style.display = "block";
+                    showMessage("Message sent successfully!", "success");
                     contactForm.reset();
-                }
-                else {
-                    console.log("SENT N0 SUCCESS!");
-                    formMessage.textContent = "Failed to send message. Please try again.";
-                    formMessage.classList.add("error");
-                    formMessage.style.display = "block";
+                } else {
+                    console.log("SENT NO SUCCESS!");
+                    showMessage("Failed to send message. Please try again.", "error");
                 }
 
                 submitButton.disabled = false;
                 submitButton.textContent = "Send";
-
             }, (error) => {
                 console.log("FAILED...", error);
-                formMessage.textContent = "Failed to send message. Please try again.";
-                formMessage.classList.add("error");
-                formMessage.style.display = "block";
+                showMessage("Failed to send message. Please try again.", "error");
                 submitButton.disabled = false;
                 submitButton.textContent = "Send";
-            })
+            });
 }
