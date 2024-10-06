@@ -21,7 +21,7 @@ function SendMail(event) {
         
         setTimeout(() => {
             formMessage.style.display = "none";
-        }, 2000);
+        }, 3000);
     }
 
     if (!fromName || !emailId || !title || !message) {
