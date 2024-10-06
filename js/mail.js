@@ -7,9 +7,16 @@ function SendMail(event) {
     const title = document.getElementById("title").value
     const message = document.getElementById("message").value
 
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
     if (!fromName || !emailId || !title || !message) {
         alert("Please fill in all fields.");
         return
+    }
+
+    if (!emailRegex.test(emailId)) {
+        alert("Please enter a valid email address.");
+        return;
     }
 
     var params = {
